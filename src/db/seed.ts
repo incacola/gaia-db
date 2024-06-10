@@ -15,12 +15,13 @@ async function resetTable(db: db, table: Table) {
 }
 
 async function seedDatabase() {
-  //for (const table of [schema.person]) {
+  for (const table of [schema.person]) {
     // await db.delete(table); // clear tables without truncating / resetting ids
-    //await resetTable(db, table);
-  //}
+    await resetTable(db, table);
+  }
 
   await seeds.person(db);
+  await seeds.address(db);
 
   await connection.end();
 }
