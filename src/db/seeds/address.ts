@@ -25,7 +25,7 @@ async function generateAddresses(startId, endId) {
 
 export default async function seed(db: db) {
   const chunkSize = 4000;
-  const totalRecords = 3500000; // Total number of persons you have
+  const totalRecords = 8500000; // Total number of persons you have
   const totalChunks = Math.ceil(totalRecords / chunkSize);
 
   for (let i = 0; i < totalChunks; i++) {

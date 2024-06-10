@@ -19,7 +19,7 @@ const legal = pgTable(
   },
   (table) => {
     return {
-      legalIdIdx: index('legal_id_idx').on(table.legal_id),
+      legalIdIdx: index('legal_id_idx').on(table.record_id),
       legalPersonIdx: index('legal_person_idx').on(table.person_id)
     };
   },

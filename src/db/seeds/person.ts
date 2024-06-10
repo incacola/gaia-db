@@ -40,12 +40,12 @@ async function generatePersons(startId, endId, usedSSNs) {
 
 export default async function seed(db: db) {
   const chunkSize = 4000;
-  const totalRecords = 0 + 3500000;
+  const totalRecords = 0 + 8500000;
   const usedSSNs = new Set();
 
   for (let i = 0; i < totalRecords; i += chunkSize) {
     const startId = 0 + i;
-    const endId = Math.min(0 + i + chunkSize, 3500000);
+    const endId = Math.min(0 + i + chunkSize, 8500000);
     const persons = await generatePersons(startId, endId, usedSSNs);
 
     await db.insert(person).values(persons);

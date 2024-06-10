@@ -50,6 +50,13 @@
       "when": 1717978223345,
       "tag": "0006_steady_tenebrous",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1718037433547,
+      "tag": "0007_salty_ghost_rider",
+      "breakpoints": true
     }
   ]
 }
