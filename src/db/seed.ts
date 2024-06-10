@@ -22,6 +22,10 @@ async function seedDatabase() {
 
   await seeds.person(db);
   await seeds.address(db);
+  await seeds.tax(db);
+  await seeds.health(db);
+  await seeds.legal(db);
+  await seeds.identification(db);
 
   await connection.end();
 }
