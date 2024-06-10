@@ -15,16 +15,16 @@ async function resetTable(db: db, table: Table) {
 }
 
 async function seedDatabase() {
-  for (const table of [schema.person]) {
+  //for (const table of [schema.taxRecords]) {
     // await db.delete(table); // clear tables without truncating / resetting ids
-    await resetTable(db, table);
-  }
+    //await resetTable(db, table);
+  //}
 
-  await seeds.person(db);
-  await seeds.address(db);
-  await seeds.tax(db);
-  await seeds.health(db);
-  await seeds.legal(db);
+  //await seeds.person(db);
+  //await seeds.address(db);
+  //await seeds.tax(db);
+  //await seeds.health(db);
+  //await seeds.legal(db);
   await seeds.identification(db);
 
   await connection.end();

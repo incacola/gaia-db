@@ -45,7 +45,7 @@ async function generateTaxRecords(startId, endId) {
 }
 
 export default async function seed(db: db) {
-  const chunkSize = 4000;
+  const chunkSize = 2000;
   const totalRecords = 8500000; // Total number of persons you have
   const totalChunks = Math.ceil(totalRecords / chunkSize);
 
